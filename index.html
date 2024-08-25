@@ -55,10 +55,10 @@
           </nav>
 
           <!-- Hero section -->
-          <header class=" hero p-4 my-2 rounded-3">
-            <div class="container-fluid pt-5 text-center">
-                <h1 class="display-5 fw-bold">Green Soul</h1>
-                <p class="col-md-8 lead">Re-connecting to ourselves and nature <br /> through community-led action.</p>
+          <header class=" hero p-4 my-2 rounded-3 pt-5">
+            <div class="container-fluid pt-5 ">
+                <h1 class="display-3 fw-bold">Green Soul</h1>
+                <p class="col-md-8 lead display-5">Re-connecting to ourselves and nature <br /> through community-led action.</p>
                 <button class="btn btn-lg" type="button">Learn More</button>
 
             </div>
@@ -104,7 +104,7 @@
 
  <!-- Our Goals -->
  <section id="about" class="bg-one">
-    <div class="container">
+    <div class="container ">
         <div class="row">
         <h2 class="pb-5 text-center">Our Goals</h2>
             
@@ -153,6 +153,56 @@
 
 
  <!-- End of Our Goals -->
+
+  <!-- Review -->
+
+
+       
+       <div class="newsletter-container pt-3">
+       <h2>Subscribe to our Newsletter</h2>
+       <form action="subscribe.php" method="post">
+           <input type="text" name="name" placeholder="Your Name" required />
+           <input type="email" name="email" placeholder="Your Email" required />
+           <button className="btn" type="submit">Subscribe</button>
+       </form>
+   </div>
+
+
+  <!-- End of Review -->
+
+
+
+  <!--Footer-->
+   <div className='content-wrapper'>
+      
+      <footer class="footer">  
+
+        <ul class="menu">
+        <li>
+      <Link to="/" className="menu__item menu__link">Home</Link>
+    </li>
+    <li>
+      <Link to="/about" className="menu__item nav-link menu__link">About Us</Link>
+    </li>
+    <li>
+      <Link to="/ourprojects" className="menu__item nav-link menu__link">Our Projects</Link>
+    </li>
+    <li>
+      <Link to="/contact" className="menu__item menu__link">Connect With Us</Link>
+    </li>
+        </ul>
+        <div class="footer_copyright">
+      <p>&copy; 2024 Green Soul. All Rights Reserved.</p>
+    </div>
+       
+               
+
+        
+    
+    
+      </footer>
+    </div>
+
 
 
 <!-- JavaScript Bundle with Popper -->

@@ -5,6 +5,12 @@ body{
     
 }
 
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
 .btn {
 background-color: darkgreen;
 color: #fafafa;
@@ -151,3 +157,67 @@ img {
     border-bottom: solid 4.2426px #ddd;
     border-left: solid 4.2426px #ddd;
     }
+
+    /* Newsletter section */
+
+    .newsletter-container {
+        background: rgb(227, 225, 225);
+      
+        padding: 20px 40px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 100%;
+        align-items: center;
+      }
+      
+      .newsletter-container h2 {
+        margin-bottom: 20px;
+      }
+      
+      .newsletter-container input[type="text"],
+      .newsletter-container input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      .newsletter-container button {
+        padding: 10px 20px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .newsletter-container button:hover {
+      }
+
+
+
+
+
+      /* Footer*/ 
+
+      .footer {
+        position: relative;
+        background: #837e7e;
+        min-height: 100px;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top:10%;
+       
+      }
+
+      .footer p {
+        color: #fff;
+        margin: 15px 0 10px 0;
+        font-size: 1rem;
+        font-weight: 300;
+      }      
+    
+  
