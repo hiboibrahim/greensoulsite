@@ -4,6 +4,17 @@ body{
     background-color: #fafafa;
     
 }
+
+.btn {
+background-color: darkgreen;
+color: #fafafa;
+font-style: bold;
+}
+
+.socials-brand {
+    color: black;
+    padding-right: 8px;
+}
 nav{
     background-color: white;
 }
@@ -27,7 +38,7 @@ nav ul li a:hover{
 }
 
 .about-section {
-    font-size: 22px;
+    font-size: 18px;
     text-align: justify;
 }
 
@@ -39,6 +50,22 @@ img {
     padding: 20%;
     width: 700px;
     height: 700px;
+  }
+
+  .about-img {
+    
+    position: relative;
+    bottom: 60px;
+    opacity: 0.8;
+    z-index: 1;
+    animation: floating 3s ease-in-out infinite;
+}
+
+
+    @keyframes floating {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
+      100% { transform: translateY(-10px); }
   }
 
 
