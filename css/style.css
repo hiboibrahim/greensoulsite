@@ -895,3 +895,126 @@ footer .footer-manu ul li a:hover {
 
 
     /* About page section */
+
+    .about-img img {
+    
+      position: relative;
+      
+      opacity: 0.8;
+      z-index: 1;
+      animation: floating 3s ease-in-out infinite;
+  }
+  
+  
+      @keyframes floating {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(10px); }
+        100% { transform: translateY(-10px); }
+    }
+    
+
+
+    /* Team Section */
+
+    
+/* Base Styles (Mobile-First) */
+.team {
+  padding: 20px;
+  text-align: center; /* Center-align text and content for mobile */
+}
+
+.center {
+  margin-bottom: 20px;
+}
+
+.center h1 {
+  font-size: 1.8rem; /* Responsive font size */
+  margin-bottom: 10px;
+}
+
+.team-content {
+  display: flex;
+  flex-direction: column; /* Stack boxes vertically on mobile */
+  align-items: center;
+}
+
+.box {
+  width: 100%;
+  max-width: 300px; /* Constrain width on mobile */
+  margin-bottom: 20px; /* Space between team members */
+  text-align: center;
+}
+
+.service-item img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Circular images */
+  margin-bottom: 10px;
+}
+
+.box h3 {
+  font-size: 1.2rem; /* Responsive font size */
+  margin: 5px 0;
+}
+
+.box h5 {
+  font-size: 1rem; /* Responsive font size */
+  color: #666; /* Slightly lighter color for roles */
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff; /* Primary button color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Media Queries */
+
+/* Tablets and small screens */
+@media (min-width: 600px) {
+  .team-content {
+      flex-direction: row; /* Switch to row layout */
+      flex-wrap: wrap; /* Allow wrapping */
+      justify-content: center; /* Center-align content */
+  }
+
+  .box {
+      width: 45%; /* Adjust width for tablets */
+      margin: 10px; /* Space between boxes */
+  }
+}
+
+/* Desktops and larger screens */
+@media (min-width: 992px) {
+  .team-content {
+      flex-direction: row; /* Ensure row layout for larger screens */
+      justify-content: space-between; /* Space out boxes */
+  }
+
+  .box {
+      width: 22%; /* Adjust width for desktops */
+  }
+
+  .center h1 {
+      font-size: 2.5rem; /* Larger font size for desktops */
+  }
+
+  .box h3 {
+      font-size: 1.5rem; /* Larger font size for desktops */
+  }
+
+  .box h5 {
+      font-size: 1.2rem; /* Larger font size for desktops */
+  }
+}
