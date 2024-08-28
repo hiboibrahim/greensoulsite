@@ -420,11 +420,11 @@ nav ul li a:hover{
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #928dab, #1f1c2c 70%);
   opacity: 0.8;
+  background-image: url(/assets/hero2.png);
 }
 #global-header .block {
-  color: #E3E3E4;
+  color: #ffffff;
   margin: 0 auto;
   padding-left: 90px;
   text-align: center;
@@ -913,6 +913,16 @@ footer .footer-manu ul li a:hover {
     }
     
 
+    .about-p {
+      text-align: justify;
+    }
+.activities-p{
+  text-align: justify;
+}
+
+.section-title p {
+  text-align: justify;
+}
 
     /* Team Section */
 
@@ -1018,3 +1028,32 @@ footer .footer-manu ul li a:hover {
       font-size: 1.2rem; /* Larger font size for desktops */
   }
 }
+
+
+/* Styling for funders section */
+
+
+.funders {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: center; /* Center-align items */
+  gap: 15px; /* Space between items */
+  padding: 10px;
+}
+
+.funders-item {
+  flex: 1 1 100%; /* Full width on mobile */
+  max-width: 200px; /* Constrain item width */
+  margin: 0; /* Margin around items */
+  overflow: hidden; /* Ensure images don’t overflow */
+}
+
+
+
+.funders-item img {
+  width: 150px; /* Responsive width */
+  height: 150px; /* Maintain aspect ratio */
+  display: block;
+  border-radius: 50%; /* Match the border-radius of the container */
+}
+
