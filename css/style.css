@@ -404,7 +404,7 @@ nav ul li a:hover{
 	Slider-work Start 
 --*/
 #global-header {
-  background: url("../img/slider-bg2.jpg") no-repeat;
+  background: url("/assets/hero2.png") no-repeat;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 107px;
@@ -421,13 +421,16 @@ nav ul li a:hover{
   width: 100%;
   height: 100%;
   opacity: 0.8;
-  background-image: url(/assets/hero2.png);
+  background:rgba(35, 128, 52, 0.897);
 }
 #global-header .block {
   color: #ffffff;
   margin: 0 auto;
   padding-left: 90px;
   text-align: center;
+  background:rgba(35, 128, 52, 0.897);
+
+
 }
 #global-header .block h1 {
   font-weight: 100;
@@ -436,13 +439,18 @@ nav ul li a:hover{
   padding-bottom: 15px;
   margin-top: 0;
   text-transform: capitalize;
+  color: #fafafa;
+  font-weight: bold;
 }
 #global-header .block p {
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 1px;
   word-spacing: 3px;
+  color: #fafafa;
+  font-weight: bold;
 }
+
 /*--
 	portfolio-work Start 
 --*/
@@ -976,7 +984,7 @@ footer .footer-manu ul li a:hover {
   padding: 10px 20px;
   font-size: 1rem;
   color: white;
-  background-color: #007bff; /* Primary button color */
+  background-color: #17631a; /* Primary button color */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -986,7 +994,7 @@ footer .footer-manu ul li a:hover {
 }
 
 .btn:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: #dd9323; /* Darker shade on hover */
 }
 
 /* Media Queries */
@@ -1033,27 +1041,77 @@ footer .footer-manu ul li a:hover {
 /* Styling for funders section */
 
 
-.funders {
-  display: flex;
-  flex-wrap: wrap; /* Allow wrapping of items */
-  justify-content: center; /* Center-align items */
-  gap: 15px; /* Space between items */
-  padding: 10px;
+
+
+
+
+
+
+
+/* Projects Page Styling */
+
+#intro {
+  margin: 0;
+  padding: 0;
+ }
+.our-projects {
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    text-align: center;
+    
 }
 
-.funders-item {
-  flex: 1 1 100%; /* Full width on mobile */
-  max-width: 200px; /* Constrain item width */
-  margin: 0; /* Margin around items */
-  overflow: hidden; /* Ensure images don’t overflow */
+.about-p {
+  letter-spacing: -2px;
+}
+.our-project p{
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 10px;
+  color: #7B7B7B;
+  text-align:justify;
+  word-spacing: -1px;
+}
+
+--*/
+#intro {
+  padding: 100px 0;
+}
+#intro .block h2 {
+  padding-top: 35px;
+  line-height: 27px;
+  margin: 0;
+}
+#intro .block p {
+  color: #7B7B7B;
+  padding-top: 20px;
+  
+}
+#intro .block img {
+  padding-left: 40px;
+  width: 100%;
+  border-radius: 10px;
+  height: 400;
+  width: 400;
+}
+#intro .section-title {
+  margin-bottom: 0px;
+  
 }
 
 
+#intro .section-title p {
+  padding-top: 20px;
+  color: rgb(68, 66, 66);
+  text-align: justify;
+}
 
-.funders-item img {
-  width: 150px; /* Responsive width */
-  height: 150px; /* Maintain aspect ratio */
-  display: block;
-  border-radius: 50%; /* Match the border-radius of the container */
+.section-p {
+  text-align: justify;
+  letter-spacing: -1px;
+  font-size: 18px;
 }
 
