@@ -45,7 +45,6 @@ a:active {
   margin-bottom: 70px;
 }
 .section-title h2 {
-  text-transform: uppercase;
   font-size: 28px;
   font-weight: 600;
 }
@@ -421,14 +420,12 @@ nav ul li a:hover{
   width: 100%;
   height: 100%;
   opacity: 0.8;
-  background:rgba(35, 128, 52, 0.897);
 }
 #global-header .block {
   color: #ffffff;
   margin: 0 auto;
   padding-left: 90px;
   text-align: center;
-  background:rgba(35, 128, 52, 0.897);
 
 
 }
@@ -1099,45 +1096,6 @@ footer .footer-manu ul li a:hover {
   background-color: #155f34; /* Darker shade on hover */
 }
 
-/* Media Queries */
-
-/* Tablets and small screens */
-@media (min-width: 600px) {
-  .team-content {
-      flex-direction: row; /* Switch to row layout */
-      flex-wrap: wrap; /* Allow wrapping */
-      justify-content: center; /* Center-align content */
-  }
-
-  .box {
-      width: 45%; /* Adjust width for tablets */
-      margin: 10px; /* Space between boxes */
-  }
-}
-
-/* Desktops and larger screens */
-@media (min-width: 992px) {
-  .team-content {
-      flex-direction: row; /* Ensure row layout for larger screens */
-      justify-content: space-between; /* Space out boxes */
-  }
-
-  .box {
-      width: 22%; /* Adjust width for desktops */
-  }
-
-  .center h1 {
-      font-size: 2.5rem; /* Larger font size for desktops */
-  }
-
-  .box h3 {
-      font-size: 1.5rem; /* Larger font size for desktops */
-  }
-
-  .box h5 {
-      font-size: 1.2rem; /* Larger font size for desktops */
-  }
-}
 
 
 /* Styling for funders section */
@@ -1151,69 +1109,105 @@ footer .footer-manu ul li a:hover {
 
 
 /* Projects Page Styling */
-
-#intro {
-  margin: 0;
-  padding: 0;
- }
-.our-projects {
-    margin: 100px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    text-align: center;
-    
+.row {
+  width: 80%;
+  max-width: 1170px;
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 50px;
+overflow-x: hidden;
+padding: 5rem 0;
 }
 
-.about-p {
-  letter-spacing: -2px;
-}
-.our-project p{
-  font-size: 20px;
-  font-weight: 600;
-  padding-top: 10px;
-  color: #7B7B7B;
-  text-align:justify;
-  word-spacing: -1px;
+.row .imgWrapper {
+  overflow: hidden;
 }
 
---*/
-#intro {
-  padding: 100px 0;
-}
-#intro .block h2 {
-  padding-top: 35px;
-  line-height: 27px;
-  margin: 0;
-}
-#intro .block p {
-  color: #7B7B7B;
-  padding-top: 20px;
-  
-}
-#intro .block img {
-  padding-left: 40px;
+.row .imgWrapper img {
   width: 100%;
-  border-radius: 10px;
-  height: 400;
-  width: 400;
-}
-#intro .section-title {
-  margin-bottom: 0px;
-  
+  height:100%;
+  object-fit: cover;
+  transition: 0.3s;
 }
 
-
-#intro .section-title p {
-  padding-top: 20px;
-  color: rgb(68, 66, 66);
-  text-align: justify;
+.row .imgWrapper img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
 }
 
-.section-p {
-  text-align: justify;
-  letter-spacing: -1px;
-  font-size: 18px;
+
+
+
+
+
+/* Media Queries */
+
+
+@media (min-width: 768px) {
+  .second .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
+@media (min-width: 768px) {
+  .second .container .left-img {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .second .container .right-content {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+  }
+}
+
+.second .container .right-content h2 {
+  margin: 30px 0 0;
+}
+
+@media (min-width: 768px) {
+  .second .container .right-content h2 {
+    margin: 0;
+  }
+}
+
+.third {
+  background-color: #e6f5fc;
+}
+
+@media (min-width: 768px) {
+  .third .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.third .container .left-content {
+  -ms-flex-preferred-size: 68%;
+      flex-basis: 68%;
+}
+
+.third .container .right-img {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
