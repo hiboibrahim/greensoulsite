@@ -403,7 +403,7 @@ nav ul li a:hover{
 	Slider-work Start 
 --*/
 #global-header {
-  background: rgba(17, 92, 17, 0.61) no-repeat;
+  background: url('/assets/gardening.jpg') no-repeat;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 107px;
@@ -907,16 +907,12 @@ footer .footer-manu ul li a:hover {
       
       opacity: 0.8;
       z-index: 1;
-      animation: floating 3s ease-in-out infinite;
+      
+     
   }
   
   
-      @keyframes floating {
-        0% { transform: translateY(0); }
-        50% { transform: translateY(10px); }
-        100% { transform: translateY(-10px); }
-    }
-    
+   
 
     .about-p {
       text-align: justify;
