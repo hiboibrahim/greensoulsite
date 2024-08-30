@@ -403,7 +403,7 @@ nav ul li a:hover{
 	Slider-work Start 
 --*/
 #global-header {
-  background: url("/assets/hero2.png") no-repeat;
+  background: rgba(17, 92, 17, 0.61) no-repeat;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 107px;
