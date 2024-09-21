@@ -167,7 +167,6 @@ nav ul li a:hover{
   font-weight: 300;
   letter-spacing: 3px;
   color: white;
-  text-align: justify;
 }
 /*--
 	wrapper Start 
@@ -905,8 +904,7 @@ footer .footer-manu ul li a:hover {
 
     .about-img img {
     
-      position: relative;
-      
+      position: relative;    
       opacity: 0.8;
       z-index: 1;
       
@@ -1014,11 +1012,16 @@ footer .footer-manu ul li a:hover {
   line-height: 30px;
 }
 
-.social-icons {
-  width: 70px;
-  display: flex;
-  justify-content: space-between;
+.navbar .navbar-nav .nav-link {
+  color: #279e3d;
 }
+.sm-icons {
+  flex-direction: row;
+}
+.sm-icons .nav-link {
+  padding-right: 1em;
+}
+
 
 .team-image-wrapper {
   clip-path: circle(50% at 50% 50%);
